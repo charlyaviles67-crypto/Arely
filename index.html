@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>¿Quieres ser mi Valentine? 💘</title>
+<style>
+body{
+    text-align:center;
+    font-family:Arial, sans-serif;
+    margin-top:100px;
+    background-color:#ffe6f0;
+}
+button{
+    padding:15px 30px;
+    font-size:18px;
+    margin:20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+#si{
+    background-color:#ff4d88;
+    color:white;
+}
+#no{
+    background-color:#999;
+    color:white;
+    position:absolute;
+}
+</style>
+</head>
+<body>
+
+<h1>¿Quieres ser mi Valentine? 💖</h1>
+
+<button id="si" onclick="alert('Sabía que dirías que sí 😍💘')">
+Sí 💘
+</button>
+
+<button id="no" onmouseover="mover(this)">
+No ❌
+</button>
+
+<script>
+function mover(btn){
+    btn.style.top=Math.random()*400 + 'px';
+    btn.style.left=Math.random()*400 + 'px';
+}
+</script>
+
+</body>
+</html>
